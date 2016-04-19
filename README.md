@@ -23,7 +23,7 @@ Note that some of these values will often contradict eact other. You may be able
 Style and naming
 ----
 
-*Linting*: Enforce a coding style by choosing a widespread linter tool for our platform and a widespread linter configuration for our linter. For JavaScript, I like eslint (eslint.org) and semistandard (https://github.com/Flet/semistandard).
+*Linting*: Enforce a coding style by choosing a widespread linter tool for our platform and a widespread linter configuration for our linter. For JavaScript, I like [eslint](eslint.org) and [semistandard](https://github.com/Flet/semistandard).
 
 *Files*: Use one or more suffixes (not prefixes) for file types (like auth.scenario.test.js). Keep unit test files in the same directory as the code file they test.
  
@@ -45,7 +45,7 @@ Quality and testing
   
 *Speed*: Spend most of your testing effort writing fast unit tests. Unit tests should be entirely in-process with no external dependencies, like file system, browser or network activity. Keep a separate suite of integration tests for more or less end-to-end testing. For JavaScript run your front-end unit tests in Node for speed and then during CI also in browsers for compatibility testing.
 
-*Mocking*: Avoid hard coding mocks of external dependencies, but instead use auto-mocking techniques as described in this blog post (http://zealake.com/2016/03/20/dont-let-your-mocks-lie-to-you/)
+*Mocking*: Avoid hard coding mocks of external dependencies, but instead use auto-mocking techniques as described in [this blog post](http://zealake.com/2016/03/20/dont-let-your-mocks-lie-to-you/)
 
 *Code coverage*: Monitor code coverage. Ideally we also want to monitor code coverage incrementally (per changeset), if we can find such a tool.
  
